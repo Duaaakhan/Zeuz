@@ -96,24 +96,8 @@ function randInt( min, max ) {
 	return Math.floor( min + Math.random() * ( max - min + 1 ) );
 };
 
-function init() {
-	canvas = document.getElementById( 'canvas' );
-	ctx = canvas.getContext( '2d' );
-	size = 30;
-	lines = [];
-	reset();
-	loop();
-}
 
-function reset() {
-	width = Math.ceil( window.innerWidth / 2 ) * 2;
-	height = Math.ceil( window.innerHeight / 2 ) * 2;
-	tick = 0;
-	
-	lines.length = 0;	
-	canvas.width = width;
-	canvas.height = height;
-}
+
 
 function create() {
 	if( tick % 10 === 0 ) {		
